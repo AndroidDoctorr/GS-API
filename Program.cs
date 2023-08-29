@@ -1,4 +1,7 @@
+using GeneralStoreAPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<GeneralStoreDbContext>();
 
 // Add services to the container.
 
